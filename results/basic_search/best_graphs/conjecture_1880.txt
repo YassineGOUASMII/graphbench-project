@@ -1,0 +1,26 @@
+Conjecture ID : 1880
+Conjecture : If G is a connected graph, x = vertex_cover_number and y = independent_domination_number, then y(G) <= - 3 + 4 * x(G)
+Trouvé : False
+Score : 0.0
+Temps : 10.00167965888977
+Graph6 : Bg
+
+Invariants :
+order = 3
+size = 2
+minimum_degree = 1
+maximum_degree = 2
+average_degree = 1.3333333333333333
+diameter = 2
+radius = 1
+vertex_connectivity = 1
+edge_connectivity = 1
+density = 0.6666666666666666
+triangle_number = 0
+clique_number = 2
+independence_number = 2
+vertex_cover_number = 1
+matching_number = 1
+domination_number = 1
+independent_domination_number = 1
+total_domination_number = 2

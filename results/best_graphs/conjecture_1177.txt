@@ -1,0 +1,6 @@
+Conjecture ID : 1177
+Conjecture : If G is a connected graph, x = clique_number and y = average_degree, then y(G) >= 4/15 + 8/15 * x(G)
+Trouvé : False
+Score : -0.1333333333333333
+Temps : 10.000375986099243
+Graph6 : EKx?

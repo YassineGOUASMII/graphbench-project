@@ -1,0 +1,6 @@
+Conjecture ID : 1466
+Conjecture : If G is a connected graph, x = domination_number and y = independent_domination_number, then y(G) <= - 51407/7000 + 254/21 * x(G) - 25/7 * x(G)² + 1/3 * x(G)³
+Trouvé : True
+Score : 0.4867142857142923
+Temps : 2.2791588306427
+Graph6 : Y~{GGKFBW?_@?B?B_@w?@??C??W??w??{??@???G??@_??F???N@????

@@ -1,0 +1,6 @@
+===== RÉSUMÉ BASELINE =====
+Nombre de conjectures testées : 20
+Nombre de contre-exemples trouvés : 18
+Taux de réussite : 90.00%
+Score total officiel approximatif : 257.72
+Temps moyen : 1.89 secondes

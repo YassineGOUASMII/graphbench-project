@@ -1,0 +1,6 @@
+Conjecture ID : 1588
+Conjecture : If G is a connected graph, x = total_domination_number and y = matching_number, then y(G) >= - 2 + x(G)
+Trouvé : False
+Score : 0.0
+Temps : 10.00814962387085
+Graph6 : IhC?MCO@?

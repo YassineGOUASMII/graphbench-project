@@ -1,0 +1,6 @@
+===== RÉSUMÉ EXPÉRIMENTAL =====
+Nombre de conjectures testées : 20
+Nombre de contre-exemples trouvés : 16
+Taux de réussite : 80.00%
+Score total officiel approximatif : 492.13
+Temps moyen : 2.61 secondes
