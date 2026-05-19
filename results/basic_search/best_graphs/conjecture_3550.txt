@@ -1,0 +1,35 @@
+Conjecture ID : 3550
+Conjecture : If G is a connected graph, x = largest_eigenvalue and y = triangle_number, then y(G) <= 5306234/359925 + 3381239/769239 * x(G) - 156301/129798 * x(G)² + 193839/770395 * x(G)³
+Trouvé : True
+Score : 70.12925469092816
+Temps : 0.19626116752624512
+Graph6 : e~~wGCB?wF_^?@??_?W?F??{?Bw??G??C??A???w??F_??^???`????_???W???F????{???Bw??G??????C????B?????w????F_??Dn_?????y??A????
+
+Invariants :
+order = 38
+size = 103
+minimum_degree = 1
+maximum_degree = 8
+average_degree = 5.421052631578948
+density = 0.1465149359886202
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 126
+clique_number = 6
+independence_number = 7
+vertex_cover_number = 31
+matching_number = 19
+domination_number = 8
+independent_domination_number = 0
+total_domination_number = 7
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 6.210741030694577
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

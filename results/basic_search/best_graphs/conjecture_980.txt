@@ -1,26 +1,35 @@
 Conjecture ID : 980
 Conjecture : If G is a connected graph, x = average_degree and y = clique_number, then y(G) <= - 1/2 + 15/8 * x(G)
 Trouvé : True
-Score : 0.6875
-Temps : 0.6657652854919434
-Graph6 : SOGI?sT?_C?OG??G??_?@??K??w?@w?@{
+Score : 0.640625
+Temps : 1.328716516494751
+Graph6 : _xCWGCB?G??B?@G???G?B??[C????G??C??@???GD???_?????W??@O????_???@????K????w???@w???@{
 
 Invariants :
-order = 20
-size = 31
+order = 32
+size = 50
 minimum_degree = 1
 maximum_degree = 6
-average_degree = 3.1
-diameter = 7
-radius = 4
-vertex_connectivity = 1
-edge_connectivity = 1
-density = 0.1631578947368421
-triangle_number = 21
+average_degree = 3.125
+density = 0.10080645161290322
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 29
 clique_number = 6
-independence_number = 10
-vertex_cover_number = 10
-matching_number = 8
-domination_number = 5
-independent_domination_number = 4
-total_domination_number = 7
+independence_number = 12
+vertex_cover_number = 20
+matching_number = 14
+domination_number = 13
+independent_domination_number = 0
+total_domination_number = 10
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

@@ -1,0 +1,35 @@
+Conjecture ID : 4288
+Conjecture : If G is a connected graph, tree, x = diameter and y = second_smallest_laplace_eigenvalue, then y(G) >= 1559831/570111 - 277470/192521 * x(G) + 35982/155885 * x(G)² - 4593/386683 * x(G)³
+Trouvé : True
+Score : 0.16898818706857366
+Temps : 2.1762306690216064
+Graph6 : FSoK?
+
+Invariants :
+order = 7
+size = 6
+minimum_degree = 1
+maximum_degree = 4
+average_degree = 1.7142857142857142
+density = 0.2857142857142857
+diameter = 3
+radius = 2
+vertex_connectivity = 1
+edge_connectivity = 1
+proximity = 0
+remoteness = 0
+triangle_number = 0
+clique_number = 2
+independence_number = 4
+vertex_cover_number = 3
+matching_number = 2
+domination_number = 2
+independent_domination_number = 0
+total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

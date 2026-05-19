@@ -1,0 +1,35 @@
+Conjecture ID : 7212
+Conjecture : If G is a connected graph, claw_free, x = first_zagreb_index and y = second_zagreb_index, then y(G) >= - 6860/9 + 91/18 * x(G)
+Trouvé : True
+Score : 1004.4444444444443
+Temps : 0.09407615661621094
+Graph6 : ^~{GGKF@w?_@?B?B_@w?@??C??W??w??{??@???G??@_??F???N??A?????G???B????[???@w???Bw
+
+Invariants :
+order = 31
+size = 70
+minimum_degree = 4
+maximum_degree = 6
+average_degree = 4.516129032258065
+density = 0.15053763440860216
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 70
+clique_number = 6
+independence_number = 6
+vertex_cover_number = 25
+matching_number = 15
+domination_number = 6
+independent_domination_number = 0
+total_domination_number = 8
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 642
+second_zagreb_index = 1479
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

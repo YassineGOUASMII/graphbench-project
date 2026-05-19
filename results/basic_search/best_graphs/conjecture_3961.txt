@@ -1,0 +1,35 @@
+Conjecture ID : 3961
+Conjecture : If G is a connected graph, x = second_smallest_laplace_eigenvalue and y = average_degree, then y(G) <= 3815729/366403 + 512942/427425 * x(G) - 76519/779410 * x(G)² + 3112/494493 * x(G)³
+Trouvé : True
+Score : 0.5090546579753816
+Temps : 0.372086763381958
+Graph6 : Yy~znuvPmnzv~x~bmp]FFvp~@hr^vNn{{G?OA??????_??@???@????_
+
+Invariants :
+order = 26
+size = 142
+minimum_degree = 1
+maximum_degree = 18
+average_degree = 10.923076923076923
+density = 0.4369230769230769
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 422
+clique_number = 8
+independence_number = 7
+vertex_cover_number = 19
+matching_number = 13
+domination_number = 17
+independent_domination_number = 0
+total_domination_number = 5
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

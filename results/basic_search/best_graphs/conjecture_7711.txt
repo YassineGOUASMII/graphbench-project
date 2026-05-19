@@ -1,0 +1,35 @@
+Conjecture ID : 7711
+Conjecture : If G is a connected graph, claw_free, x = second_smallest_laplace_eigenvalue and y = diameter, then y(G) >= 5355713/432357 - 39231495/989881 * x(G)
+Trouvé : True
+Score : 11.38724711291826
+Temps : 0.1804802417755127
+Graph6 : F~~~w
+
+Invariants :
+order = 7
+size = 21
+minimum_degree = 6
+maximum_degree = 6
+average_degree = 6.0
+density = 1.0
+diameter = 1
+radius = 1
+vertex_connectivity = 6
+edge_connectivity = 6
+proximity = 0
+remoteness = 0
+triangle_number = 35
+clique_number = 7
+independence_number = 1
+vertex_cover_number = 6
+matching_number = 3
+domination_number = 1
+independent_domination_number = 0
+total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

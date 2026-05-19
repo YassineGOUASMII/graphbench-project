@@ -1,0 +1,35 @@
+Conjecture ID : 7719
+Conjecture : If G is a connected graph, claw_free, x = second_smallest_laplace_eigenvalue and y = radius, then y(G) >= 5794759/969658 - 16973595/950842 * x(G)
+Trouvé : True
+Score : 4.976085382681316
+Temps : 0.08751988410949707
+Graph6 : E~{_
+
+Invariants :
+order = 6
+size = 11
+minimum_degree = 1
+maximum_degree = 5
+average_degree = 3.6666666666666665
+density = 0.7333333333333333
+diameter = 2
+radius = 1
+vertex_connectivity = 1
+edge_connectivity = 1
+proximity = 0
+remoteness = 0
+triangle_number = 10
+clique_number = 5
+independence_number = 2
+vertex_cover_number = 4
+matching_number = 3
+domination_number = 1
+independent_domination_number = 0
+total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

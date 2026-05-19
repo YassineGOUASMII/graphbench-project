@@ -1,0 +1,35 @@
+Conjecture ID : 7694
+Conjecture : If G is a connected graph, claw_free, x = largest_distance_eigenvalue and y = proximity, then y(G) >= 346411/982152 - 4319/918263 * x(G)
+Trouvé : True
+Score : 0.00024287959434116102
+Temps : 1.0792512893676758
+Graph6 : Hj?H?SC
+
+Invariants :
+order = 9
+size = 9
+minimum_degree = 1
+maximum_degree = 3
+average_degree = 2.0
+density = 0.25
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0.23529411764705882
+remoteness = 0
+triangle_number = 1
+clique_number = 3
+independence_number = 4
+vertex_cover_number = 5
+matching_number = 4
+domination_number = 4
+independent_domination_number = 0
+total_domination_number = 4
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 24.911333729697773
+second_smallest_laplace_eigenvalue = 0

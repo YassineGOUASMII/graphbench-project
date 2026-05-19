@@ -13,11 +13,11 @@ from search import search_counterexample
 def main():
     df = pd.read_excel("benchmark/benchmark.xlsx")
 
-    number_of_conjectures = 20
-    time_limit = 15
+    number_of_conjectures = 100
+    time_limit = 40
 
     # Nombre de redémarrages
-    restarts = 3
+    restarts = 4
 
     os.makedirs("results/basic_search", exist_ok=True)
     os.makedirs("results/basic_search/best_graphs", exist_ok=True)

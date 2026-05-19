@@ -6,7 +6,10 @@ def generate_initial_graph(conjecture):
     """
     Génère un graphe initial selon la classe de la conjecture.
     """
+    names = {conjecture.x_name, conjecture.y_name}
 
+    if "density" in names and "proximity" in names:
+      return generate_two_cliques_bridge()
     subgroup = str(conjecture.subgroup).lower()
 
     if "tree" in subgroup:
@@ -44,7 +47,7 @@ def generate_random_graph():
 
 
 def generate_erdos_graph():
-    n = random.randint(5, 30)
+    n = random.randint(5, 35)
     p = random.uniform(0.2, 0.8)
 
     G = nx.erdos_renyi_graph(n, p)
@@ -70,7 +73,22 @@ def generate_cycle_plus_chords():
 
     return G
 
+def generate_two_cliques_bridge():
+    a = random.randint(5, 12)
+    b = random.randint(5, 12)
 
+    G1 = nx.complete_graph(a)
+    G2 = nx.complete_graph(b)
+
+    mapping = {i: i + a for i in G2.nodes()}
+    G2 = nx.relabel_nodes(G2, mapping)
+
+    G = nx.compose(G1, G2)
+
+    # pont entre les deux cliques
+    G.add_edge(random.randint(0, a - 1), random.randint(a, a + b - 1))
+
+    return G
 def generate_clique_chain():
     number_of_cliques = random.randint(2, 6)
     clique_size = random.randint(3, 7)

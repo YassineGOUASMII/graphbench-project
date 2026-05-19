@@ -1,0 +1,35 @@
+Conjecture ID : 3144
+Conjecture : If G is a connected graph, x = proximity and y = total_domination_number, then y(G) >= 20/3 - 112/9 * x(G)
+Trouvé : True
+Score : 0.020997375328084544
+Temps : 9.387652158737183
+Graph6 : [xCWw{^?G?_B?F?F_Bw?@??C??W??w??{??^?Dw??@^[?????Jw??G???A|O??_O
+
+Invariants :
+order = 28
+size = 81
+minimum_degree = 1
+maximum_degree = 10
+average_degree = 5.785714285714286
+density = 0.21428571428571427
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0.2125984251968504
+remoteness = 0
+triangle_number = 112
+clique_number = 6
+independence_number = 7
+vertex_cover_number = 21
+matching_number = 14
+domination_number = 13
+independent_domination_number = 0
+total_domination_number = 4
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

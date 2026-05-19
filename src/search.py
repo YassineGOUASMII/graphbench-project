@@ -13,6 +13,32 @@ def search_counterexample(conjecture, time_limit=60):
 
     population_size = 40
     population = []
+    cache = {}
+
+    required = [
+        conjecture.x_name,
+        conjecture.y_name,
+        "order",
+        "size",
+        "density",
+        "maximum_degree",
+        "average_degree",
+        "triangle_number",
+        "clique_number",
+        "domination_number",
+        "total_domination_number",
+        "independence_number",
+        "matching_number",
+        "vertex_cover_number",
+    ]
+
+    def get_invariants(G):
+        graph6 = nx.to_graph6_bytes(G, header=False).decode().strip()
+
+        if graph6 not in cache:
+            cache[graph6] = compute_invariants(G, required)
+
+        return cache[graph6]
 
     for _ in range(population_size):
         G = generate_initial_graph(conjecture)
@@ -20,7 +46,7 @@ def search_counterexample(conjecture, time_limit=60):
         if not is_valid_for_conjecture(G, conjecture):
             continue
 
-        invariants = compute_invariants(G)
+        invariants = get_invariants(G)
         real_score = conjecture.violation(invariants)
         heuristic = heuristic_score(G, invariants, conjecture)
 
@@ -28,7 +54,7 @@ def search_counterexample(conjecture, time_limit=60):
 
     if not population:
         G = generate_initial_graph(conjecture)
-        invariants = compute_invariants(G)
+        invariants = get_invariants(G)
         real_score = conjecture.violation(invariants)
         heuristic = heuristic_score(G, invariants, conjecture)
         population.append((real_score, heuristic, G, invariants))
@@ -40,30 +66,38 @@ def search_counterexample(conjecture, time_limit=60):
     print("Score initial :", best_score)
 
     while time.time() - start < time_limit:
-        by_real = sorted(population, key=lambda x: x[0], reverse=True)[:10]
-        by_heuristic = sorted(population, key=lambda x: x[1], reverse=True)[:10]
+        by_real = sorted(population, key=lambda x: x[0], reverse=True)[:8]
+        by_heuristic = sorted(population, key=lambda x: x[1], reverse=True)[:8]
 
         candidate_pool = by_real + by_heuristic
+
         _, _, parent_graph, _ = random.choice(candidate_pool)
 
-        child = mutate(parent_graph)
+        child = parent_graph.copy()
+
+# Nombre de mutations adaptatif
+        if random.random() < 0.7:
+          mutations_count = random.randint(1, 3)
+        else:
+          mutations_count = random.randint(4, 8)
+
+        for _ in range(mutations_count):
+          child = mutate(child)
 
         if not is_valid_for_conjecture(child, conjecture):
             continue
 
-        invariants = compute_invariants(child)
+        invariants = get_invariants(child)
         real_score = conjecture.violation(invariants)
         heuristic = heuristic_score(child, invariants, conjecture)
 
         population.append((real_score, heuristic, child, invariants))
 
-        # Conservation mixte : moitié vraie violation, moitié score heuristique
-        top_real = sorted(population, key=lambda x: x[0], reverse=True)[:20]
-        top_heuristic = sorted(population, key=lambda x: x[1], reverse=True)[:20]
+        top_real = sorted(population, key=lambda x: x[0], reverse=True)[:15]
+        top_heuristic = sorted(population, key=lambda x: x[1], reverse=True)[:15]
 
         merged = top_real + top_heuristic
 
-        # supprimer doublons approximatifs par graph6
         unique = {}
         for item in merged:
             _, _, G, _ = item
@@ -77,7 +111,6 @@ def search_counterexample(conjecture, time_limit=60):
             best_heuristic = heuristic
             best_graph = child
             best_invariants = invariants
-            print("Nouveau meilleur score :", best_score)
 
         if real_score > 0:
             return {

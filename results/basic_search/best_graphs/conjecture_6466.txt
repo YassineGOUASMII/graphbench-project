@@ -1,0 +1,35 @@
+Conjecture ID : 6466
+Conjecture : If G is a connected graph, claw_free, x = triangle_number and y = largest_eigenvalue, then y(G) <= 2060411/341361 + 16152/649175 * x(G)
+Trouvé : True
+Score : 0.011899968450249432
+Temps : 0.35167646408081055
+Graph6 : L~~~~~~~wO?_?G
+
+Invariants :
+order = 13
+size = 48
+minimum_degree = 1
+maximum_degree = 10
+average_degree = 7.384615384615385
+density = 0.6153846153846154
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 120
+clique_number = 10
+independence_number = 4
+vertex_cover_number = 9
+matching_number = 6
+domination_number = 3
+independent_domination_number = 0
+total_domination_number = 3
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 9.033468315466672
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

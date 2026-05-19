@@ -1,0 +1,35 @@
+Conjecture ID : 7732
+Conjecture : If G is a connected graph, claw_free, x = second_smallest_laplace_eigenvalue and y = maximum_degree, then y(G) <= 8459147/721314 + 1143239/716098 * x(G) - 81349/469222 * x(G)² + 6765/973694 * x(G)³
+Trouvé : True
+Score : 0.27258725049007815
+Temps : 0.14836692810058594
+Graph6 : Z~~~~~~~~~~~?C??_?W?F??{G????G??C??@???K??????@???B???B_??@w
+
+Invariants :
+order = 27
+size = 93
+minimum_degree = 1
+maximum_degree = 12
+average_degree = 6.888888888888889
+density = 0.26495726495726496
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 240
+clique_number = 12
+independence_number = 6
+vertex_cover_number = 21
+matching_number = 13
+domination_number = 17
+independent_domination_number = 0
+total_domination_number = 7
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

@@ -1,0 +1,35 @@
+Conjecture ID : 1892
+Conjecture : If G is a connected graph, x = vertex_cover_number and y = total_domination_number, then y(G) <= 2 + x(G)
+Trouvé : True
+Score : 1.0
+Temps : 1.2441706657409668
+Graph6 : XgEW`wC?G?g??@??_?GQ?A?G??_?_C?????@AO???C????@???@
+
+Invariants :
+order = 25
+size = 31
+minimum_degree = 1
+maximum_degree = 6
+average_degree = 2.48
+density = 0.10333333333333333
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 6
+clique_number = 4
+independence_number = 15
+vertex_cover_number = 10
+matching_number = 10
+domination_number = 11
+independent_domination_number = 0
+total_domination_number = 13
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

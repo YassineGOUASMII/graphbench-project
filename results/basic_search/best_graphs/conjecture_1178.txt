@@ -1,26 +1,35 @@
 Conjecture ID : 1178
 Conjecture : If G is a connected graph, x = clique_number and y = average_degree, then y(G) >= 3/5 * x(G)
 Trouvé : True
-Score : 0.5599999999999996
-Temps : 0.4416947364807129
-Graph6 : XhCKGC@?WG_@?@??_?G?@??A??G??o??C??@???W??B_??N???^
+Score : 0.26666666666666616
+Temps : 0.4370722770690918
+Graph6 : ]@EA?P?O?Cg?C@?Q@_??O?????W??w??{@?????G??@_??F???N???N_?C????o??@?????Z??
 
 Invariants :
-order = 25
-size = 38
-minimum_degree = 2
+order = 30
+size = 50
+minimum_degree = 1
 maximum_degree = 6
-average_degree = 3.04
-diameter = 8
-radius = 6
-vertex_connectivity = 1
-edge_connectivity = 1
-density = 0.12666666666666668
-triangle_number = 21
+average_degree = 3.3333333333333335
+density = 0.11494252873563218
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 32
 clique_number = 6
-independence_number = 9
-vertex_cover_number = 16
-matching_number = 12
-domination_number = 12
-independent_domination_number = 9
+independence_number = 10
+vertex_cover_number = 20
+matching_number = 13
+domination_number = 15
+independent_domination_number = 0
 total_domination_number = 10
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

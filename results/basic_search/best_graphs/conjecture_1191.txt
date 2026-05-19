@@ -1,26 +1,35 @@
 Conjecture ID : 1191
 Conjecture : If G is a connected graph, x = clique_number and y = minimum_degree, then y(G) <= 106807/693000 + 29551/8316 * x(G) - 39/77 * x(G)² + 29/1188 * x(G)³
 Trouvé : True
-Score : 1.33505483405483
-Temps : 0.529332160949707
-Graph6 : Tv}L~bHN\n]~|fvzi|evYerJ~^r^zrf}rT]a
+Score : 2.094795093795092
+Temps : 0.5165631771087646
+Graph6 : Sj^]~~~n~|eJ]~rv^~jv|tzu|uZn{jn{g
 
 Invariants :
-order = 21
-size = 146
-minimum_degree = 10
-maximum_degree = 19
-average_degree = 13.904761904761905
-diameter = 2
-radius = 2
-vertex_connectivity = 10
-edge_connectivity = 10
-density = 0.6952380952380952
-triangle_number = 448
-clique_number = 8
+order = 20
+size = 147
+minimum_degree = 11
+maximum_degree = 18
+average_degree = 14.7
+density = 0.7736842105263158
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 535
+clique_number = 9
 independence_number = 4
-vertex_cover_number = 17
+vertex_cover_number = 16
 matching_number = 10
 domination_number = 2
-independent_domination_number = 2
+independent_domination_number = 0
 total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

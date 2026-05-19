@@ -1,0 +1,35 @@
+Conjecture ID : 3193
+Conjecture : If G is a connected graph, x = proximity and y = vertex_cover_number, then y(G) >= 59/5 - 572/15 * x(G)
+Trouvé : True
+Score : 0.29185185185185336
+Temps : 0.8717114925384521
+Graph6 : Mg?WCCo?OO?@?@??_
+
+Invariants :
+order = 14
+size = 13
+minimum_degree = 1
+maximum_degree = 3
+average_degree = 1.8571428571428572
+density = 0.14285714285714285
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0.14444444444444443
+remoteness = 0
+triangle_number = 0
+clique_number = 2
+independence_number = 8
+vertex_cover_number = 6
+matching_number = 6
+domination_number = 7
+independent_domination_number = 0
+total_domination_number = 7
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

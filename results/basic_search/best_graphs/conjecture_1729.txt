@@ -1,0 +1,35 @@
+Conjecture ID : 1729
+Conjecture : If G is a connected graph, x = independence_number and y = proximity, then y(G) >= 2/5 - 1/25 * x(G)
+Trouvé : True
+Score : 0.011594202898550732
+Temps : 0.8880083560943604
+Graph6 : MxCWGCB?G?_B?@??_
+
+Invariants :
+order = 14
+size = 17
+minimum_degree = 1
+maximum_degree = 3
+average_degree = 2.4285714285714284
+density = 0.18681318681318682
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0.18840579710144928
+remoteness = 0
+triangle_number = 4
+clique_number = 3
+independence_number = 5
+vertex_cover_number = 9
+matching_number = 7
+domination_number = 9
+independent_domination_number = 0
+total_domination_number = 6
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

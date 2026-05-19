@@ -1,0 +1,35 @@
+Conjecture ID : 1793
+Conjecture : If G is a connected graph, x = independence_number and y = second_smallest_laplace_eigenvalue, then y(G) >= 247857/776608 - 20663/466926 * x(G)
+Trouvé : True
+Score : 0.18639349735188432
+Temps : 0.2107095718383789
+Graph6 : O~~~v~~C?_?@?B?B_@w?^
+
+Invariants :
+order = 16
+size = 52
+minimum_degree = 1
+maximum_degree = 10
+average_degree = 6.5
+density = 0.43333333333333335
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 97
+clique_number = 8
+independence_number = 3
+vertex_cover_number = 13
+matching_number = 8
+domination_number = 5
+independent_domination_number = 0
+total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

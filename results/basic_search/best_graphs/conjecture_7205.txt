@@ -1,0 +1,35 @@
+Conjecture ID : 7205
+Conjecture : If G is a connected graph, claw_free, x = first_zagreb_index and y = second_zagreb_index, then y(G) >= - 7740/13 + 121/26 * x(G)
+Trouvé : True
+Score : 949.3076923076928
+Temps : 0.06212902069091797
+Graph6 : a~{GGKF@w?_@?B?B_@w?@??C??W??w??{??@???G??@_??F???N????_???G???B????[???@w?G???????C????B?????w
+
+Invariants :
+order = 34
+size = 72
+minimum_degree = 3
+maximum_degree = 5
+average_degree = 4.235294117647059
+density = 0.12834224598930483
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 64
+clique_number = 5
+independence_number = 7
+vertex_cover_number = 27
+matching_number = 17
+domination_number = 13
+independent_domination_number = 0
+total_domination_number = 8
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 622
+second_zagreb_index = 1350
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

@@ -1,0 +1,35 @@
+Conjecture ID : 1917
+Conjecture : If G is a connected graph, x = vertex_cover_number and y = proximity, then y(G) >= 57/130 - 9/130 * x(G)
+Trouvé : True
+Score : 0.0004273504273503981
+Temps : 34.426711559295654
+Graph6 : ]H_G?CHO?O?GAOA??G@O??C?G??A??O??G???O??A???G???O??A????G???O????O???@????
+
+Invariants :
+order = 30
+size = 30
+minimum_degree = 1
+maximum_degree = 13
+average_degree = 2.0
+density = 0.06896551724137931
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0.16111111111111112
+remoteness = 0
+triangle_number = 0
+clique_number = 2
+independence_number = 26
+vertex_cover_number = 4
+matching_number = 4
+domination_number = 4
+independent_domination_number = 0
+total_domination_number = 6
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

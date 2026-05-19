@@ -1,26 +1,35 @@
 Conjecture ID : 886
 Conjecture : If G is a connected graph, x = maximum_degree and y = triangle_number, then y(G) <= - 1/6 * x(G) + 1/6 * x(G)³
 Trouvé : True
-Score : 25.0
-Temps : 0.36789822578430176
-Graph6 : Q~~wGCB?wF_^?@??_?W?F??{?Bw
+Score : 114.0
+Temps : 0.33687376976013184
+Graph6 : b~~~wC@?WB_N?^?]_?G?@??K??w?@w?@{??~???G???_??B???F???F_??Bw???~????C????G????W????[????N????Bw????^_
 
 Invariants :
-order = 18
-size = 47
+order = 35
+size = 108
 minimum_degree = 5
-maximum_degree = 6
-average_degree = 5.222222222222222
-diameter = 5
-radius = 3
-vertex_connectivity = 1
-edge_connectivity = 1
-density = 0.30718954248366015
-triangle_number = 60
-clique_number = 6
-independence_number = 3
-vertex_cover_number = 15
-matching_number = 9
-domination_number = 3
-independent_domination_number = 3
-total_domination_number = 4
+maximum_degree = 7
+average_degree = 6.171428571428572
+density = 0.1815126050420168
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 170
+clique_number = 7
+independence_number = 5
+vertex_cover_number = 30
+matching_number = 17
+domination_number = 5
+independent_domination_number = 0
+total_domination_number = 6
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

@@ -1,0 +1,35 @@
+Conjecture ID : 1337
+Conjecture : If G is a connected graph, x = triangle_number and y = average_degree, then y(G) <= 5 + 2/45 * x(G)
+Trouvé : True
+Score : 0.061111111111110894
+Temps : 1.6632022857666016
+Graph6 : OsGPHP^_NLTAN{LsMJc@N
+
+Invariants :
+order = 16
+size = 54
+minimum_degree = 4
+maximum_degree = 10
+average_degree = 6.75
+density = 0.45
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 38
+clique_number = 4
+independence_number = 5
+vertex_cover_number = 11
+matching_number = 8
+domination_number = 2
+independent_domination_number = 0
+total_domination_number = 3
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

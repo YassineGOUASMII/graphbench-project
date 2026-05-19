@@ -1,0 +1,35 @@
+Conjecture ID : 713
+Conjecture : If G is a connected graph, x = density and y = remoteness, then y(G) >= - 52151/672841 + 32707/15661 * x(G) - 1003885/407224 * x(G)² + 1327461/986882 * x(G)³
+Trouvé : True
+Score : 0.0024052127583287786
+Temps : 4.25533127784729
+Graph6 : [~~n~~~~~~g??@?@_?w?N??G??G??G??K??@???G???_??B???F???F~v??F~_?@
+
+Invariants :
+order = 28
+size = 103
+minimum_degree = 2
+maximum_degree = 13
+average_degree = 7.357142857142857
+density = 0.2724867724867725
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0.3333333333333333
+triangle_number = 274
+clique_number = 10
+independence_number = 6
+vertex_cover_number = 22
+matching_number = 14
+domination_number = 13
+independent_domination_number = 0
+total_domination_number = 6
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

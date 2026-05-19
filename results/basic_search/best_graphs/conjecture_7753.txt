@@ -1,0 +1,35 @@
+Conjecture ID : 7753
+Conjecture : If G is a connected graph, claw_free, x = second_smallest_laplace_eigenvalue and y = total_domination_number, then y(G) >= 2527817/415576 - 5304461/387748 * x(G)
+Trouvé : True
+Score : 4.082682830577319
+Temps : 0.1054069995880127
+Graph6 : O~~~~~~~~~_O?@?@_?w?N
+
+Invariants :
+order = 16
+size = 66
+minimum_degree = 4
+maximum_degree = 11
+average_degree = 8.25
+density = 0.55
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 175
+clique_number = 11
+independence_number = 2
+vertex_cover_number = 14
+matching_number = 8
+domination_number = 8
+independent_domination_number = 0
+total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

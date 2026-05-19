@@ -1,0 +1,35 @@
+Conjecture ID : 5381
+Conjecture : If G is a connected graph, tree, x = proximity and y = remoteness, then y(G) >= 9/418 + 609/418 * x(G)
+Trouvé : True
+Score : 0.0021531100478469067
+Temps : 4.056318998336792
+Graph6 : [??HO?A_C_?OOAC?G??C??A@???I?AA??A???A??O??A????_???A??A????G???
+
+Invariants :
+order = 28
+size = 27
+minimum_degree = 1
+maximum_degree = 7
+average_degree = 1.9285714285714286
+density = 0.07142857142857142
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0.15517241379310345
+remoteness = 0.24545454545454545
+triangle_number = 0
+clique_number = 2
+independence_number = 15
+vertex_cover_number = 13
+matching_number = 8
+domination_number = 8
+independent_domination_number = 0
+total_domination_number = 8
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0

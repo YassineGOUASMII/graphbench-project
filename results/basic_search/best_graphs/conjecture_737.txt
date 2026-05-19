@@ -1,0 +1,35 @@
+Conjecture ID : 737
+Conjecture : If G is a connected graph, x = density and y = second_smallest_laplace_eigenvalue, then y(G) >= - 140492/481757 + 768435/626984 * x(G)
+Trouvé : True
+Score : 0.555157738466595
+Temps : 0.23531246185302734
+Graph6 : J~~~~~~?c??
+
+Invariants :
+order = 11
+size = 38
+minimum_degree = 1
+maximum_degree = 9
+average_degree = 6.909090909090909
+density = 0.6909090909090909
+diameter = 0
+radius = 0
+vertex_connectivity = 0
+edge_connectivity = 0
+proximity = 0
+remoteness = 0
+triangle_number = 84
+clique_number = 9
+independence_number = 2
+vertex_cover_number = 9
+matching_number = 5
+domination_number = 2
+independent_domination_number = 0
+total_domination_number = 2
+randic_index = 0
+harmonic_index = 0
+first_zagreb_index = 0
+second_zagreb_index = 0
+largest_eigenvalue = 0
+largest_distance_eigenvalue = 0
+second_smallest_laplace_eigenvalue = 0
