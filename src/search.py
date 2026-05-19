@@ -8,10 +8,10 @@ from invariants import compute_invariants
 from scoring import heuristic_score
 
 
-def search_counterexample(conjecture, time_limit=30):
+def search_counterexample(conjecture, time_limit=60):
     start = time.time()
 
-    population_size = 20
+    population_size = 40
     population = []
 
     for _ in range(population_size):
@@ -21,29 +21,30 @@ def search_counterexample(conjecture, time_limit=30):
             continue
 
         invariants = compute_invariants(G)
-
+        real_score = conjecture.violation(invariants)
         heuristic = heuristic_score(G, invariants, conjecture)
-        real_violation = conjecture.violation(invariants)
 
-        population.append((heuristic, real_violation, G, invariants))
+        population.append((real_score, heuristic, G, invariants))
 
     if not population:
         G = generate_initial_graph(conjecture)
         invariants = compute_invariants(G)
-
+        real_score = conjecture.violation(invariants)
         heuristic = heuristic_score(G, invariants, conjecture)
-        real_violation = conjecture.violation(invariants)
-
-        population.append((heuristic, real_violation, G, invariants))
+        population.append((real_score, heuristic, G, invariants))
 
     population.sort(key=lambda x: x[0], reverse=True)
 
-    best_heuristic, best_real_violation, best_graph, best_invariants = population[0]
+    best_score, best_heuristic, best_graph, best_invariants = population[0]
 
-    print("Score initial :", best_real_violation)
+    print("Score initial :", best_score)
 
     while time.time() - start < time_limit:
-        _, _, parent_graph, _ = random.choice(population[:5])
+        by_real = sorted(population, key=lambda x: x[0], reverse=True)[:10]
+        by_heuristic = sorted(population, key=lambda x: x[1], reverse=True)[:10]
+
+        candidate_pool = by_real + by_heuristic
+        _, _, parent_graph, _ = random.choice(candidate_pool)
 
         child = mutate(parent_graph)
 
@@ -51,28 +52,39 @@ def search_counterexample(conjecture, time_limit=30):
             continue
 
         invariants = compute_invariants(child)
-
+        real_score = conjecture.violation(invariants)
         heuristic = heuristic_score(child, invariants, conjecture)
-        real_violation = conjecture.violation(invariants)
 
-        population.append((heuristic, real_violation, child, invariants))
-        population.sort(key=lambda x: x[0], reverse=True)
-        population = population[:population_size]
+        population.append((real_score, heuristic, child, invariants))
 
-        if real_violation > best_real_violation:
+        # Conservation mixte : moitié vraie violation, moitié score heuristique
+        top_real = sorted(population, key=lambda x: x[0], reverse=True)[:20]
+        top_heuristic = sorted(population, key=lambda x: x[1], reverse=True)[:20]
+
+        merged = top_real + top_heuristic
+
+        # supprimer doublons approximatifs par graph6
+        unique = {}
+        for item in merged:
+            _, _, G, _ = item
+            key = nx.to_graph6_bytes(G, header=False).decode().strip()
+            unique[key] = item
+
+        population = list(unique.values())[:population_size]
+
+        if real_score > best_score:
+            best_score = real_score
             best_heuristic = heuristic
-            best_real_violation = real_violation
             best_graph = child
             best_invariants = invariants
+            print("Nouveau meilleur score :", best_score)
 
-            print("Nouveau meilleur score :", best_real_violation)
-
-        if real_violation > 0:
+        if real_score > 0:
             return {
                 "found": True,
                 "graph": child,
                 "invariants": invariants,
-                "score": real_violation,
+                "score": real_score,
                 "heuristic_score": heuristic,
                 "time": time.time() - start,
             }
@@ -81,7 +93,7 @@ def search_counterexample(conjecture, time_limit=30):
         "found": False,
         "graph": best_graph,
         "invariants": best_invariants,
-        "score": best_real_violation,
+        "score": best_score,
         "heuristic_score": best_heuristic,
         "time": time.time() - start,
     }
@@ -93,36 +105,27 @@ def is_valid_for_conjecture(G, conjecture):
     if G.number_of_nodes() == 0:
         return False
 
-    if "connected" in subgroup:
-        if not nx.is_connected(G):
-            return False
+    if "connected" in subgroup and not nx.is_connected(G):
+        return False
 
-    if "tree" in subgroup:
-        if not nx.is_tree(G):
-            return False
+    if "tree" in subgroup and not nx.is_tree(G):
+        return False
 
-    if "bipartite" in subgroup:
-        if not nx.is_bipartite(G):
-            return False
+    if "bipartite" in subgroup and not nx.is_bipartite(G):
+        return False
 
     if "planar" in subgroup:
         is_planar, _ = nx.check_planarity(G)
         if not is_planar:
             return False
 
-    if "claw" in subgroup:
-        if not is_claw_free(G):
-            return False
+    if "claw" in subgroup and not is_claw_free(G):
+        return False
 
     return True
 
 
 def is_claw_free(G):
-    """
-    Vérifie si le graphe est sans griffe.
-    Une griffe = K1,3 induit.
-    """
-
     for center in G.nodes():
         neighbors = list(G.neighbors(center))
 

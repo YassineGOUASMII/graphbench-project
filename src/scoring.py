@@ -1,11 +1,4 @@
 def heuristic_score(G, invariants, conjecture):
-    """
-    Conservative adaptive scoring.
-
-    The real violation remains the most important signal.
-    X and Y are only used as small tie-breakers.
-    """
-
     violation = conjecture.violation(invariants)
 
     x = invariants.get(conjecture.x_name, 0)
@@ -13,28 +6,41 @@ def heuristic_score(G, invariants, conjecture):
 
     n = invariants.get("order", 0)
     m = invariants.get("size", 0)
+    triangles = invariants.get("triangle_number", 0)
+    clique = invariants.get("clique_number", 0)
+    max_degree = invariants.get("maximum_degree", 0)
+    avg_degree = invariants.get("average_degree", 0)
+    domination = invariants.get("domination_number", 0)
+    total_domination = invariants.get("total_domination_number", 0)
+    independence = invariants.get("independence_number", 0)
+    matching = invariants.get("matching_number", 0)
+    vertex_cover = invariants.get("vertex_cover_number", 0)
 
     density = 0
     if n > 1:
         density = 2 * m / (n * (n - 1))
 
-    score = 10000.0 * violation
+    score = 1000.0 * violation
 
-    # For Y <= f(X), we want Y high
     if conjecture.sign == "<=":
-        score += 0.1 * y
-
-    # For Y >= f(X), we want Y low
+        score += 0.2 * y
+        score -= 0.05 * x
     elif conjecture.sign == ">=":
-        score -= 0.1 * y
+        score -= 0.2 * y
+        score += 0.05 * x
 
-    # Encourage exploration of useful X values, but very slightly
-    score += 0.01 * x
+    score += 0.03 * triangles
+    score += 0.15 * clique
+    score += 0.04 * max_degree
+    score += 0.03 * avg_degree
 
-    # Avoid graphs that are too large
-    score -= 0.001 * n
+    score += 0.05 * domination
+    score += 0.05 * total_domination
+    score += 0.04 * independence
+    score += 0.04 * matching
+    score += 0.04 * vertex_cover
 
-    # Avoid extreme density
-    score -= 0.01 * abs(density - 0.5)
+    score -= 0.002 * n
+    score -= 0.02 * abs(density - 0.5)
 
     return score

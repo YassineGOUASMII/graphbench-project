@@ -3,46 +3,22 @@ import pandas as pd
 
 
 def main():
-    baseline_file = "results/baseline_search/scores.csv"
-    targeted_file = "results/targeted_search/scores.csv"
+    results_file = "results/basic_search/scores.csv"
 
-    baseline_df = pd.read_csv(baseline_file)
-    targeted_df = pd.read_csv(targeted_file)
-
-    final_results = []
-
-    targeted_ids = set(targeted_df["id"])
-
-    for _, row in baseline_df.iterrows():
-        conjecture_id = row["id"]
-
-        if conjecture_id in targeted_ids:
-            targeted_row = targeted_df[
-                targeted_df["id"] == conjecture_id
-            ].iloc[0]
-
-            if targeted_row["found"]:
-                final_results.append(targeted_row.to_dict())
-            else:
-                final_results.append(row.to_dict())
-
-        else:
-            final_results.append(row.to_dict())
-
-    final_df = pd.DataFrame(final_results)
+    df = pd.read_csv(results_file)
 
     os.makedirs("results/final", exist_ok=True)
 
     final_csv = "results/final/final_results.csv"
     final_summary = "results/final/final_summary.txt"
 
-    final_df.to_csv(final_csv, index=False)
+    df.to_csv(final_csv, index=False)
 
-    found_count = final_df["found"].sum()
-    total_count = len(final_df)
+    found_count = df["found"].sum()
+    total_count = len(df)
 
-    total_cost = final_df["cost"].sum()
-    average_time = final_df["time"].mean()
+    total_cost = df["cost"].sum()
+    average_time = df["time"].mean()
 
     with open(final_summary, "w", encoding="utf-8") as f:
         f.write("===== FINAL RESULTS =====\n")

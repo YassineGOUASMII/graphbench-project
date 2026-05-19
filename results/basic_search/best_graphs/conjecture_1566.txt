@@ -1,26 +1,26 @@
 Conjecture ID : 1566
 Conjecture : If G is a connected graph, x = total_domination_number and y = independence_number, then y(G) >= - 1 + x(G)
-Trouvé : False
-Score : 0.0
-Temps : 10.009578227996826
-Graph6 : C~
+Trouvé : True
+Score : 1.0
+Temps : 0.5082478523254395
+Graph6 : N~sGGKF@w?_@?B?B_@w
 
 Invariants :
-order = 4
-size = 6
+order = 15
+size = 31
 minimum_degree = 3
-maximum_degree = 3
-average_degree = 3.0
-diameter = 1
-radius = 1
-vertex_connectivity = 3
-edge_connectivity = 3
-density = 1.0
-triangle_number = 4
-clique_number = 4
-independence_number = 1
-vertex_cover_number = 3
-matching_number = 2
-domination_number = 1
-independent_domination_number = 1
-total_domination_number = 2
+maximum_degree = 5
+average_degree = 4.133333333333334
+diameter = 6
+radius = 3
+vertex_connectivity = 1
+edge_connectivity = 1
+density = 0.29523809523809524
+triangle_number = 27
+clique_number = 5
+independence_number = 3
+vertex_cover_number = 12
+matching_number = 7
+domination_number = 3
+independent_domination_number = 3
+total_domination_number = 5

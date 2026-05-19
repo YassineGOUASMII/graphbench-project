@@ -2,25 +2,25 @@ Conjecture ID : 1588
 Conjecture : If G is a connected graph, x = total_domination_number and y = matching_number, then y(G) >= - 2 + x(G)
 Trouvé : True
 Score : 1.0
-Temps : 0.3201766014099121
-Graph6 : YhCGGC??GO_@?@??_?G?@??C??G??G?????@???G???_?_@???@_??A_
+Temps : 1.1698026657104492
+Graph6 : KeAH_QGO??_@
 
 Invariants :
-order = 26
-size = 27
+order = 12
+size = 13
 minimum_degree = 1
-maximum_degree = 3
-average_degree = 2.076923076923077
-diameter = 12
-radius = 6
+maximum_degree = 4
+average_degree = 2.1666666666666665
+diameter = 7
+radius = 4
 vertex_connectivity = 1
 edge_connectivity = 1
-density = 0.08307692307692308
-triangle_number = 0
-clique_number = 2
-independence_number = 12
-vertex_cover_number = 14
-matching_number = 12
-domination_number = 12
-independent_domination_number = 12
-total_domination_number = 15
+density = 0.19696969696969696
+triangle_number = 1
+clique_number = 3
+independence_number = 5
+vertex_cover_number = 7
+matching_number = 5
+domination_number = 5
+independent_domination_number = 5
+total_domination_number = 8

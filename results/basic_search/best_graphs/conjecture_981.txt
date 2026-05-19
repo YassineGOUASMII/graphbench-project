@@ -1,26 +1,26 @@
 Conjecture ID : 981
 Conjecture : If G is a connected graph, x = average_degree and y = clique_number, then y(G) <= 5/3 * x(G)
 Trouvé : True
-Score : 0.11111111111111072
-Temps : 0.22937941551208496
-Graph6 : K@cCAKO?G@_F
+Score : 0.22222222222222232
+Temps : 1.2907023429870605
+Graph6 : ]OC@H?K_?H?E?GA?CO?@QOC?@???A???C??B???wA?????@???@?A??????G???B????[???@w
 
 Invariants :
-order = 12
-size = 14
+order = 30
+size = 43
 minimum_degree = 1
-maximum_degree = 4
-average_degree = 2.3333333333333335
-diameter = 7
-radius = 4
+maximum_degree = 6
+average_degree = 2.8666666666666667
+diameter = 11
+radius = 6
 vertex_connectivity = 1
 edge_connectivity = 1
-density = 0.21212121212121213
-triangle_number = 4
-clique_number = 4
-independence_number = 5
-vertex_cover_number = 7
-matching_number = 5
-domination_number = 4
-independent_domination_number = 4
-total_domination_number = 4
+density = 0.09885057471264368
+triangle_number = 17
+clique_number = 5
+independence_number = 12
+vertex_cover_number = 18
+matching_number = 14
+domination_number = 14
+independent_domination_number = 10
+total_domination_number = 12

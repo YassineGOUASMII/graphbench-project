@@ -1,26 +1,26 @@
 Conjecture ID : 886
 Conjecture : If G is a connected graph, x = maximum_degree and y = triangle_number, then y(G) <= - 1/6 * x(G) + 1/6 * x(G)³
 Trouvé : True
-Score : 20.0
-Temps : 0.18305039405822754
-Graph6 : S~{GGKF@w?_@?B?B_@w?@??C??W??w??{
+Score : 25.0
+Temps : 0.36789822578430176
+Graph6 : Q~~wGCB?wF_^?@??_?W?F??{?Bw
 
 Invariants :
-order = 20
-size = 43
-minimum_degree = 4
-maximum_degree = 5
-average_degree = 4.3
-diameter = 7
-radius = 4
+order = 18
+size = 47
+minimum_degree = 5
+maximum_degree = 6
+average_degree = 5.222222222222222
+diameter = 5
+radius = 3
 vertex_connectivity = 1
 edge_connectivity = 1
-density = 0.22631578947368422
-triangle_number = 40
-clique_number = 5
-independence_number = 4
-vertex_cover_number = 16
-matching_number = 10
-domination_number = 4
-independent_domination_number = 4
+density = 0.30718954248366015
+triangle_number = 60
+clique_number = 6
+independence_number = 3
+vertex_cover_number = 15
+matching_number = 9
+domination_number = 3
+independent_domination_number = 3
 total_domination_number = 4

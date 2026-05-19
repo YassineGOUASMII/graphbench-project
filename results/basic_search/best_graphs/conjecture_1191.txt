@@ -1,26 +1,26 @@
 Conjecture ID : 1191
 Conjecture : If G is a connected graph, x = clique_number and y = minimum_degree, then y(G) <= 106807/693000 + 29551/8316 * x(G) - 39/77 * x(G)² + 29/1188 * x(G)³
 Trouvé : True
-Score : 1.485848484848482
-Temps : 0.2409830093383789
-Graph6 : XpqwvpMhPGV[Umw~jXKHNgt|QrVkunf}lUcNevmB]Sf}|qtYl}~
+Score : 1.33505483405483
+Temps : 0.529332160949707
+Graph6 : Tv}L~bHN\n]~|fvzi|evYerJ~^r^zrf}rT]a
 
 Invariants :
-order = 25
-size = 178
+order = 21
+size = 146
 minimum_degree = 10
-maximum_degree = 18
-average_degree = 14.24
+maximum_degree = 19
+average_degree = 13.904761904761905
 diameter = 2
 radius = 2
 vertex_connectivity = 10
 edge_connectivity = 10
-density = 0.5933333333333334
-triangle_number = 473
-clique_number = 6
-independence_number = 5
-vertex_cover_number = 20
-matching_number = 12
-domination_number = 4
-independent_domination_number = 3
-total_domination_number = 3
+density = 0.6952380952380952
+triangle_number = 448
+clique_number = 8
+independence_number = 4
+vertex_cover_number = 17
+matching_number = 10
+domination_number = 2
+independent_domination_number = 2
+total_domination_number = 2

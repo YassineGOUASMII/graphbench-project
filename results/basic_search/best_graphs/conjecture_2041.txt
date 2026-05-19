@@ -1,26 +1,26 @@
 Conjecture ID : 2041
 Conjecture : If G is a connected graph, x = independent_domination_number and y = matching_number, then y(G) >= 3/4 + 1/4 * x(G)
-Trouvé : False
-Score : 0.0
-Temps : 10.001107692718506
-Graph6 : Bw
+Trouvé : True
+Score : 0.25
+Temps : 2.884277105331421
+Graph6 : MhPaB@?G@?C?G?O??
 
 Invariants :
-order = 3
-size = 3
-minimum_degree = 2
-maximum_degree = 2
-average_degree = 2.0
-diameter = 1
-radius = 1
-vertex_connectivity = 2
-edge_connectivity = 2
-density = 1.0
-triangle_number = 1
+order = 14
+size = 15
+minimum_degree = 1
+maximum_degree = 8
+average_degree = 2.142857142857143
+diameter = 3
+radius = 2
+vertex_connectivity = 1
+edge_connectivity = 1
+density = 0.16483516483516483
+triangle_number = 2
 clique_number = 3
-independence_number = 1
-vertex_cover_number = 2
-matching_number = 1
-domination_number = 1
-independent_domination_number = 1
+independence_number = 10
+vertex_cover_number = 4
+matching_number = 2
+domination_number = 2
+independent_domination_number = 6
 total_domination_number = 2

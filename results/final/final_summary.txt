@@ -2,5 +2,5 @@
 Conjectures tested : 20
 Counterexamples found : 20
 Success rate : 100.00%
-Approximate total cost : 19.14
-Average time : 0.96 seconds
+Approximate total cost : 35.52
+Average time : 1.78 seconds

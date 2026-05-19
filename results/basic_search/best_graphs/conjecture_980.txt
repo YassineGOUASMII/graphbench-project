@@ -1,26 +1,26 @@
 Conjecture ID : 980
 Conjecture : If G is a connected graph, x = average_degree and y = clique_number, then y(G) <= - 1/2 + 15/8 * x(G)
 Trouvé : True
-Score : 0.19318181818181834
-Temps : 0.2892031669616699
-Graph6 : US?cCDEaig?A?_??_?G?A??G??G??W??[??N??Bw
+Score : 0.6875
+Temps : 0.6657652854919434
+Graph6 : SOGI?sT?_C?OG??G??_?@??K??w?@w?@{
 
 Invariants :
-order = 22
-size = 37
+order = 20
+size = 31
 minimum_degree = 1
 maximum_degree = 6
-average_degree = 3.3636363636363638
-diameter = 8
+average_degree = 3.1
+diameter = 7
 radius = 4
 vertex_connectivity = 1
 edge_connectivity = 1
-density = 0.16017316017316016
-triangle_number = 23
+density = 0.1631578947368421
+triangle_number = 21
 clique_number = 6
-independence_number = 9
-vertex_cover_number = 13
-matching_number = 10
-domination_number = 9
-independent_domination_number = 7
+independence_number = 10
+vertex_cover_number = 10
+matching_number = 8
+domination_number = 5
+independent_domination_number = 4
 total_domination_number = 7

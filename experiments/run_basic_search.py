@@ -14,7 +14,7 @@ def main():
     df = pd.read_excel("benchmark/benchmark.xlsx")
 
     number_of_conjectures = 20
-    time_limit = 10
+    time_limit = 15
 
     # Nombre de redémarrages
     restarts = 3
